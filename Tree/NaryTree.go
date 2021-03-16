@@ -76,33 +76,3 @@ func helper(treeNode *TreeNode,level int64)  {
 	}
 
 }*/
-
-func main() {
-
-	// 6 node tree
-	root := TreeNode{2, nil}
-	node1 := TreeNode{3, nil}
-	node2 := TreeNode{4, nil}
-	node3 := TreeNode{5, nil}
-	node4 := TreeNode{6, nil}
-	node5 := TreeNode{7, nil}
-	node6 := TreeNode{8, nil}
-	//node3 := TreeNode{6,nil}
-
-	// 5 edges required to build 6 node tree
-	root.children = append(root.children, &node1)
-	root.children = append(root.children, &node2)
-	root.children = append(root.children, &node3)
-	node2.children = append(node2.children, &node4)
-	node2.children = append(node2.children, &node5)
-	node4.children = append(node4.children, &node6)
-
-	//i:=depthOfTree(&root)
-	//fmt.Println(i)
-
-	j := maxDepth(&root)
-	fmt.Println(j)
-
-	//printTree(root)
-
-}

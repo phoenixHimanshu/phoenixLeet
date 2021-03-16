@@ -79,24 +79,3 @@ func InOrderTraversal(root *Node) {
 	preOrderTraversal(root.right)
 
 }
-
-func main() {
-
-	var t Tree
-	var p Tree
-	t.insert(2)
-	t.insert(3)
-	t.insert(1)
-	p.insert(2)
-	p.insert(3)
-	p.insert(1)
-
-	//fmt.Println(isSameTree(t.root,p.root))
-	fmt.Println("PreOrderTraversal")
-	preOrderTraversal(t.root)
-	fmt.Println("PostOrderTraversal")
-	postOrderTraversal(t.root)
-	fmt.Println("InOrderTraversal")
-	InOrderTraversal(t.root)
-
-}
