@@ -57,13 +57,3 @@ func (l *ll) reverse() {
 	l.head = prev
 
 }
-
-func main() {
-	l := ll{nil, 0}
-	l.insertNode(10)
-	l.insertNode(20)
-	l.insertNode(30)
-	l.reverse()
-	l.printll()
-
-}
