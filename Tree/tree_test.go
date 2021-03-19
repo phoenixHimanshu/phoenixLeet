@@ -22,11 +22,15 @@ func TestSerializeTree(t *testing.T) {
 
 	var tree Tree
 
-	tree.insert(1)
 	tree.insert(2)
+	tree.insert(1)
 	tree.insert(3)
 
-	fmt.Println(serialize(tree.root))
+	strStream := serialize(tree.root)
+	fmt.Println(strStream)
+	InOrderTraversal(deserialize(strStream))
+	//Todo not working 1,2 is working fine but 3 is missing
+	// solve the bug
 
 }
 
