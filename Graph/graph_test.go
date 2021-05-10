@@ -14,6 +14,13 @@ import "testing"
 func TestGetVerticesEdges(t *testing.T) {
 
 	adjMatrix := getVerticesEdgesMatrix()
-	printGraph(adjMatrix, 0)
+	//DFS
+	println("=====================")
+	printGraphDFS(adjMatrix, 0)
+
+	//BFS
+
+	println("=====================")
+	printGraphBFS(adjMatrix)
 
 }
