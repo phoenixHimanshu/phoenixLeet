@@ -12,9 +12,3 @@ func febo(n int) int {
 	}
 	return febo(n-1) + febo(n-2)
 }
-
-func main() {
-	for i := 0; i < 10; i++ {
-		println(febo(i))
-	}
-}
