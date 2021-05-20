@@ -1,10 +1,11 @@
 package main
 
 // LIS  Longest Increasing Subsequence
-
 //2D array for memoization
+// N Square complexity
 
 // 1 2 5 3 4
+
 func lengthOfLIS(arr []int) int {
 	var memoo [10][10]int
 	return LISHelper(-1, 0, arr, memoo)
