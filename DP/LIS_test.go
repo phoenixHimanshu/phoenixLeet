@@ -21,6 +21,3 @@ func TestBottomUp1(t *testing.T) {
 	arr := [25]int{10, 22, 9, 33, 21, 50, 41, 60, 80, 3}
 	println(lisIterative(arr))
 }
-func TestTemparvari(t *testing.T) {
-	println(longestCommonSubsequenceLentgh("DBC", "CBD"))
-}

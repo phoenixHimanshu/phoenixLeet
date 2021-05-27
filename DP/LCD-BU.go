@@ -1,12 +1,6 @@
 package main
 
 //TODO implimentation fails if s1 and s2 have different size
-/*
-	l(string1, string2) =   if c1 == c2      c1 and c2 are first char from string1 and string2
-							1 + l( r1 + r2)
-							if c1 != c2
-							max( l(r1,s1),l(s1,r2))
-*/
 
 func longestCommonSubsequenceLentgh(s1 string, s2 string) int {
 
@@ -59,50 +53,3 @@ func longestCommonSubsequenceLentgh(s1 string, s2 string) int {
 	}
 	return cache[len(s2)][len(s1)]
 }
-
-/*
-
-Example 1:  Works
-
-Input:
-s1 = "ABCD"
-s2 = "ABCD"
-
-Output: 4
-Explanation:
-"ABCD"
-"ABCD"
-Both strings share the subsequence "A", "B", "C", "D".
-
-
-Example 2:
-
-Input:
-s1 = "ADC"
-s2 = "ABCD"
-
-Output: 2  ==> Does not work
-Explanation:
-"ADC"
-"ABCD"
-Both strings share the subsequence "A", "D".
-
-
-Example 3:  ==> Does not work
-
-Input:
-s1 = "DBC"
-s2 = "CBD"
-
-Output: 1
-Explanation:
-"DBC"
-"CBD"
-      or
-"DBC"
-"CBD"
-      or
-"DBC"
-"CBD"
-
-*/
