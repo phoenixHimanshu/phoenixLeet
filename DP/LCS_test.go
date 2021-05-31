@@ -3,6 +3,7 @@ package main
 import "testing"
 
 /*
+Longest common subsequence......
 
 Example 1:  Works
 
@@ -49,6 +50,23 @@ Explanation:
 
 */
 
-func TestLCD(t *testing.T) {
+func TestLCS(t *testing.T) {
 	println(longestCommonSubsequenceLentgh("ABCD", "ABCD"))
+}
+func TestLCS1(t *testing.T) {
+	println(longestCommonSubsequenceLentgh("ADC", "ABCD"))
+}
+func TestLCS2(t *testing.T) {
+	println(longestCommonSubsequenceLentgh("DBC", "CBD"))
+}
+
+func TestLCSRecursive(t *testing.T) {
+	println(longestCommonSubsequenceLengthRecur("ADC", "ABCD"))
+}
+func TestLCSRecursive1(t *testing.T) {
+	println(longestCommonSubsequenceLengthRecur("ABCD", "ABCD"))
+}
+
+func TestLCSRecursive2(t *testing.T) {
+	println(longestCommonSubsequenceLengthRecur("DBC", "CBD"))
 }

@@ -37,7 +37,8 @@ func (l *ll) insertNode(val int) {
 
 func (l *ll) printll() {
 	ptr := l.head
-	for i := l.len; i != 0; i-- {
+	//	for i := l.len; i != 0; i-- {
+	for ptr.next != nil {
 		fmt.Println(ptr.data)
 
 		ptr = ptr.next
