@@ -9,3 +9,7 @@ func TestAddTwoDigits(t *testing.T) {
 func TestAddTwoDigits1(t *testing.T) {
 	println(addTwoDigitsRecursive(2, 3))
 }
+
+func TestHammingWeight(t *testing.T) {
+	println(hammingWeight(3))
+}
